@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="NavbarAndFooter.css">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <div class="header">
+
+         <div class="LogoContainer">
+            <img class="Logo" src="Images/ETN final logo 2.0.png">
+          <p class="LogoText">EMPOWERING THE NATION</p>
+
+        <div class="topnav">
+            <a class="active" href="index.html">Home</a>
+            <a href="ExploreCourse.html">Courses</a>
+            <a href="#">AI Tutor</a>
+            <a href="contact.html">Contact</a>
+            <a href="payment.html"><img class="CartIcon" src="Images/shopping-cart_logo.png"><a>
+          </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="body">
+
+        <div class="section1">
+             <h class="bodyHead">
+             Fee Payment Calculator:
+
+             </h>
+             <p class="bodyText">
+                We use special discount calculator
+                 to offer <br>the best price reductions for our students.
+                 <br><br>•5% discount for two courses
+                 <br>•10% discount for three courses
+                 <br>•15% discount for four & more courses
+
+             </p>
+        </div>
+    
+       
+        <div class="section2">
+
+
+
+            <label>Select the courses:</label>
+            <label><input type="checkbox" value="First Aid">First Aid (R1500)</label>
+            <label><input type="checkbox" value="Sewing">Sewing (R1500)</label>
+            <label><input type="checkbox" value="Landscaping">Landscaping (R1500)</label>
+            <label><input type="checkbox" value="Life Skills">Life Skills (R1500)</label>
+            <label><input type="checkbox" value="Child minding">Child minding (R750)</label>
+            <label><input type="checkbox" value="Cooking">Cooking (R750)</label>
+            <label><input type="checkbox" value="Garden maintenance">Garden maintenance (R750)</label>
+        
+            <p>Discount: <span id="discount">0%</span></p>
+            <p>VAT: <span id="VAT">15%</p>
+            <p>Total Fee: <span id="totalFee">0</span></p>
+        
+            <h2>Selected Courses</h2>
+            <ul id="selectedCourses"></ul>
+                
+             <script>
+        // Get references to HTML elements
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        const discountSpan = document.getElementById("discount");
+        const totalFeeSpan = document.getElementById("totalFee");
+        const selectedCoursesList = document.getElementById("selectedCourses");
+
+        // Prices for individual courses in ZAR
+        const coursePrices = {
+            "First Aid": 1500,
+            "Sewing": 1500,
+            "Landscaping": 1500,
+            "Life Skills": 1500,
+            "Child minding": 750,
+            "Cooking": 750,
+            "Garden maintenance": 750
+        };
+
+        // Add event listeners to the checkboxes
+        checkboxes.forEach(checkbox => checkbox.addEventListener("change", updateFee));
+
+        function updateFee() {
+            const selectedCourses = Array.from(checkboxes)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value);
+            const courseCount = selectedCourses.length;
+            let discount = 0;
+
+            if (courseCount === 2) {
+                discount = 5;
+            } else if (courseCount === 3) {
+                discount = 10;
+            } else if (courseCount > 3) {
+                discount = 15;
+            }
+
+            const totalCourseFee = selectedCourses.reduce((total, course) => total + coursePrices[course], 0);
+            const calculatedDiscount = (discount / 100) * totalCourseFee;
+            const VAT = totalCourseFee*0.15;
+            const totalFee = (totalCourseFee + VAT) - calculatedDiscount;
+
+            discountSpan.textContent = discount + "%";
+            totalFeeSpan.textContent = "R" + totalFee; 
+
+            // Update the selected courses ticker
+            selectedCoursesList.innerHTML = selectedCourses.map(course => `<li>${course} (R${coursePrices[course]})</li>`).join("");
+        }
+
+        // Initial update
+        updateFee();
+    </script>
+
+           <!--<script>
+                // Get references to HTML elements
+                const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+                const discountSpan = document.getElementById("discount");
+                const totalFeeSpan = document.getElementById("totalFee");
+                const selectedCoursesList = document.getElementById("selectedCourses");
+                const vatSpan = document.getElementById("VAT");
+                // Prices for individual courses in ZAR
+                const coursePrices = {
+                    "First Aid": 1500,
+                    "Sewing": 1500,
+                    "Landscaping": 1500,
+                    "Life Skills": 1500,
+                    "Child minding": 750,
+                    "Cooking": 750,
+                    "Garden maintenance": 750
+                };
+        
+                // Add event listeners to the checkboxes
+                checkboxes.forEach(checkbox => checkbox.addEventListener("change", updateFee));
+        
+                function updateFee() {
+                    const selectedCourses = Array.from(checkboxes)
+                        .filter(checkbox => checkbox.checked)
+                        .map(checkbox => checkbox.value);
+                    let discount = 0;
+        
+                    if (courseCount === 2) {
+                        discount = 5;
+                    } else if (courseCount === 3) {
+                        discount = 10;
+                    } else if (courseCount > 3) {
+                        discount = 15;
+                    }
+        
+                    const totalCourseFee = selectedCourses.reduce((total, course) => total + coursePrices[course], 0);
+                    const calculatedDiscount = (discount / 100) * totalCourseFee;
+                    const subtotal = totalCourseFee - calculatedDiscount;
+                    const vat = (subtotal*0.15)
+                    const totalFee = subtotal + (subtotal*0.15)
+
+        
+                    discountSpan.textContent = discount + "%";
+                    vatSpan.textContent = "VAT: R" + vat 
+                    totalFeeSpan.textContent = "R" + totalFee;
+        
+                    // Update the selected courses ticker
+                    selectedCoursesList.innerHTML = selectedCourses.map(course => `<li>${course} (R${coursePrices[course]})</li>`).join("");
+                }
+        
+                // Initial update
+                updateFee();
+            </script>-->
+
+
+        </div>
+    
+    </div>
+
+    <!-- FOOTER-->
+    <div class="footer">
+      
+        <div class="columnLogo">
+            <img class="LogoFooter" src="Images/ETN final logo 2.0.png">
+            <p class="LogoTextFooter">EMPOWERING THE <br>NATION</p>
+            <p class="LogoTextFooter2"> 
+                We offer our students  the best and suitable services to for building their bright future.
+            </p>
+        </div>
+
+        <div class='column'>
+      <h class="footTextHead">Organisation</h>
+      <p><a class="footText" href="">About</a></p>
+      <p><a class="footText" href="">Careers</a></p>
+      <p><a class="footText" href="">Mobile</a></p>
+      <p><a class="footText" href="">How it works</a></p>
+        </div>
+
+       
+       
+        <div class='column'>
+            <h class="footTextHead">Support</h>
+            <p><a class="footText" href="">Support</a></p>
+            <p><a class="footText" href="">24hr Service</a></p>
+            <p><a class="footText" href="">Quick Chat</a></p>
+          
+               
+           </div>
+   
+   
+           <div class='column'>
+            <h class="footTextHead">About us</h>
+             <p><a class="footText" href="">Privacy</a></p>
+             <p><a class="footText" href="">Security</a></p>
+             <p><a class="footText" href="">Complains</a></p>  
+           </div>
+         
+      
+        <div class="columnSocial">
+         <h class="footTextHead">Follow us</h>   
+         <div class="SocialStacks">
+           <a href="#"> <img class="SocialLogo" src="Images/Instagramlogo.jpg"/> </a>
+           <a href="#"> <img class="SocialLogo" src="Images/facebookIcon.png"/>  </a>
+            <a href="#"> <img class="SocialLogo" src="Images/Twiiter.jpg"/> </a>
+         </div>
+       
+
+        </div>
+
+    </div>

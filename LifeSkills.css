@@ -1,0 +1,99 @@
+
+body{
+    background-color:#d2f9fe ;
+}
+.body{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.body2{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color:#00C8E3 ;
+   
+}
+.section1{
+    height: 500px;
+    background-color: #ffffff00;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.section2{
+    height: 500px;
+    background-color: rgba(118, 60, 60, 0);
+    width: 50%;
+    /*display: flex;
+    justify-content: center;
+    justify-items: center;*/
+
+}
+
+.section2Image{
+ height: 490px;
+ width: 490px;   
+ border-radius: 5px;
+ margin-bottom: 15px;
+}
+
+.TopText{
+    color: #454545;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bodyText{
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: flex;
+    justify-items: start;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.bodyHead{
+    font-family: Arial;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.bodyHead_2{
+    font-family: Arial;
+    font-size: 22px;
+    color: #000000;
+    font-weight: 750;
+    margin-top: 25px;
+    display: flex;  
+}
+
+.bodyHead3{
+    font-family: Arial;
+    font-size: 15px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.bodyText2{
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+
+}

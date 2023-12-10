@@ -1,0 +1,241 @@
+.topnav {
+    overflow: hidden;
+    background-color: #33333300;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav a:hover {
+    background-color: #71717100;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .topnav a.active {
+    background-color: #ffffff00;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .CartIcon{
+    height: 15px;
+    width:20px;
+  }
+
+   .LogoContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #00C8E3;
+   }
+
+  .Logo{
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+
+  }
+
+  .LogoText{
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: 400;
+    margin-right: 680px;
+    margin-left: 25px;
+  }
+
+  
+  .footer{
+    width: 100%; 
+    height: 100%;
+     background: #68E1FD;
+     display: flex;
+     flex-direction: row;
+  }
+  
+  .column {
+     margin-top: 35px;
+     margin-right: 100px;
+     margin-left: 40px;
+    }
+
+    
+
+
+    .ColumnLogo{
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+    .LogoFooter{
+        margin-top: 25px;
+        height: 75px;
+        width: 75px;
+        margin-left: 25px;
+    
+      }
+    
+      .LogoTextFooter{
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: 200;
+        margin-right: 65px;
+        margin-left: 25px;
+      }
+      .LogoTextFooter2{
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 50;
+        margin-right: 65px;
+        margin-left: 25px;
+        width: 40%;
+      }
+    
+    
+      .footText{
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 15px;
+        color: #000000;
+      }
+      .footTextHead{
+        font-family: Arial;
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .columnSocial{
+        margin-top: 100px;
+        margin-right: 25px;
+        margin-left: 100px; 
+    }
+
+    .SocialStacks{
+       display: flex;
+       flex-direction: row; 
+    }
+
+    .SocialLogo{
+        height: 45px;
+        width: 45px;
+        margin-top: 20px;
+        margin-right: 20px;
+        border-radius: 45px;
+    }
+
+    
+@media screen and (max-width: 600px)
+{
+
+  .Logo{
+    margin-top: 15px;
+    height: 75px;
+    width: 75px;
+
+  }
+
+  .LogoText{
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: 400;
+    margin-right: 680px;
+    margin-left: 25px;
+  }
+
+  
+  .footer{
+    width: 100%; 
+    height: 100%;
+     background: #68E1FD;
+     display: flex;
+     flex-direction: column;
+  }
+  
+  .column {
+     margin-top: 35px;
+     margin-right: 100px;
+     margin-left: 30%;
+     
+    }
+
+    
+
+
+    .ColumnLogo{
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+    .LogoFooter{
+        margin-top: 25px;
+        height: 75px;
+        width: 75px;
+        margin-left: 25px;
+    
+      }
+    
+      .LogoTextFooter{
+        font-family: Arial;
+        font-size: 25px;
+        font-weight: 200;
+        margin-right: 65px;
+        margin-left: 25px;
+      }
+      .LogoTextFooter2{
+        font-family: Arial;
+        font-size: 15px;
+        font-weight: 50;
+        margin-right: 65px;
+        margin-left: 25px;
+        width: 40%;
+      }
+    
+    
+      .footText{
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 15px;
+        color: #000000;
+      }
+      .footTextHead{
+        font-family: Arial;
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .columnSocial{
+        margin-top: 100px;
+        margin-right: 25px;
+        margin-left: 100px; 
+    }
+
+    .SocialStacks{
+       display: flex;
+       flex-direction: row; 
+       margin-bottom: 50px;
+    }
+
+    .SocialLogo{
+        height: 45px;
+        width: 45px;
+        margin-top: 20px;
+        margin-right: 20px;
+        border-radius: 45px;
+    }
+
+}

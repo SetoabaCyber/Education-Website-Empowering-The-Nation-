@@ -1,0 +1,640 @@
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#selectedCourses {
+    list-style: none;
+    padding: 0;
+}
+
+#selectedCourses li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #c0eb6a;
+    border: 1px solid #8cc051;
+    border-radius: 5px;
+}
+
+#discount {
+    font-size: 18px;
+    color: #333;
+}
+
+#totalFee {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+.body{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    background-image: url("Images/Ubuntu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    padding-top: 150px;
+    padding-bottom: 250px;
+}
+
+.body2{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background-color:#00C8E3 ;
+   
+}
+.section1{
+    border-radius: 20px;
+    height: 730px;
+    background-color: #ffffffd4;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+.section2{
+    border-radius: 20px;
+    height: 730px;
+    background-color: rgba(255, 255, 255, 0.415);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    flex: 1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.section2Image{
+ height: 490px;
+ width: 490px;   
+ border-radius: 65px;
+ margin-bottom: 15px;
+}
+
+
+
+.section3{
+    height: 500px;
+    background-color: #ffffff00;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    color: #ffffff;
+}
+
+.section3Image{
+    height: 390px;
+    width: 390px;   
+    border-radius: 65px;
+   }
+
+.section4{
+    height: 500px;
+    background-color: #ffffff00;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   /* background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;*/
+    color: #ffffff;
+}
+
+
+.bodyText{
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: flex;
+    justify-items: start;
+    align-items: flex-start;
+
+}
+
+.bodyHead{
+    font-family: Arial;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.bodyHead_2{
+    font-family: Arial;
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.bodyText2{
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: flex;
+    justify-items: start;
+    align-items: center;
+
+}
+
+.explore{
+    font-size: 27px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 90px;
+}
+
+.cardholder{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.card {
+    width: 300px;
+    background: #00C8E3;
+    box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    
+    margin-left: 10px;
+    border-radius: 35px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 470px;
+    height: 500px;
+   
+}
+
+.card-content {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.cardpara {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Arial;
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-to-cart-button, .details-button {
+    background-color:#00C01F;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-button:hover, .details-button:hover {
+    background-color: #E0E0E0;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.moreexplore{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 70px;
+}
+
+.lastcard {
+
+    width: 650px;
+    background: #00C8E3;
+    border-radius: 5px;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 45px;
+    font-family: Arial;
+
+
+    margin-top: 55px;
+    margin-bottom: 55px;
+    display: flex;
+    /*justify-content: center;
+    justify-items: center;*/
+}
+
+.semilast{
+    border: 20;
+}
+
+.card-heading {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 45px;
+    margin-top: 35px;
+}
+
+.card-paragraph {
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+.para{
+    font-size: 18px;
+    margin-left: 45px;
+    margin-top: 35px;
+}
+
+
+.unlock{
+    display: flex;
+    flex-direction: row;
+}
+
+.bonusCard{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-left: x;
+}
+
+@media screen and (max-width: 600px){
+    label {
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+    
+    #selectedCourses {
+        list-style: none;
+        padding: 0;
+    }
+    
+    #selectedCourses li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px 0;
+        padding: 10px;
+        background-color: #c0eb6a;
+        border: 1px solid #8cc051;
+        border-radius: 5px;
+    }
+    
+    #discount {
+        font-size: 18px;
+        color: #333;
+    }
+    
+    #totalFee {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    
+    
+    .body{
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 300px;
+    }
+    
+    .body2{
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        background-color:#00C8E3 ;
+       
+    }
+    .section1{
+        height: 500px;
+        background-color: rgb(209, 251, 255);
+        width: 100%;
+        display: flex;/*
+        justify-content: center;
+        align-items: center;*/
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:fixed;
+        margin: 0 auto;
+        box-shadow: 1px 1px 1px 1px #00000033;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .section2{
+        height: 500px;
+        background-color: rgba(118, 60, 60, 0);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        margin-left: 50px;
+        margin-top: 30px;
+    
+    }
+    
+    .section2Image{
+     height: 490px;
+     width: 490px;   
+     border-radius: 65px;
+     margin-bottom: 15px;
+    }
+    
+    
+    
+    .section3{
+        height: 500px;
+        background-color: #ffffff00;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:fixed;
+        color: #ffffff;
+    }
+    
+    .section3Image{
+        height: 390px;
+        width: 390px;   
+        border-radius: 65;
+       }
+    
+    .section4{
+        height: 500px;
+        background-color: #ffffff00;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       /* background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:fixed;*/
+        color: #ffffff;
+    }
+    
+    
+    .bodyText{
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000000;
+        display: flex;
+        justify-items: start;
+        align-items: flex-start;
+    
+    }
+    
+    .bodyHead{
+        font-family: Arial;
+        font-size: 30px;
+        color: #000000;
+        font-weight: bold;
+        margin-top: 0px;
+    }
+    
+    .bodyHead_2{
+        font-family: Arial;
+        font-size: 22px;
+        color: #000000;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+    
+    .bodyText2{
+        font-family: Arial;
+        text-decoration: none;
+        font-size: 20px;
+        color: #000000;
+        display: flex;
+        justify-items: start;
+        align-items: center;
+    
+    }
+    
+    
+    .explore{
+        font-size: 27px;
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 30px;
+        margin-bottom: 90px;
+    }
+    
+    
+    
+    
+    .cardholder{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    
+    .card {
+        width: 300px;
+        background: #00C8E3;
+        box-shadow: 4px 4px 8px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.2s;
+        
+        margin-left: 10px;
+        border-radius: 35px;
+    }
+    
+    .card:hover {
+        transform: scale(1.05);
+    }
+    
+    .card-image {
+        width: 470px;
+        height: 500px;
+       
+    }
+    
+    .card-content {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 24px;
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+    }
+    
+    .cardpara {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: Arial;
+        margin: 10px 0;
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .add-to-cart-button, .details-button {
+        background-color:#00C01F;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .add-to-cart-button:hover, .details-button:hover {
+        background-color: #E0E0E0;
+        color: #000;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    
+    .moreexplore{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin-bottom: 70px;
+    }
+    
+    .lastcard {
+    
+        width: 650px;
+        background: #00C8E3;
+        border-radius: 5px;
+        color: #000000;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 45px;
+        font-family: Arial;
+        margin-top: 55px;
+        margin-bottom: 55px;
+        display: flex;
+        /*justify-content: center;
+        justify-items: center;*/
+    }
+    
+    .semilast{
+        border: 20;
+    }
+    
+    .card-heading {
+        font-size: 24px;
+        margin: 0;
+        padding: 10px 0;
+    }
+    
+    .card-image {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 45px;
+        margin-top: 35px;
+    }
+    
+    .card-paragraph {
+        font-size: 16px;
+        margin: 20px 0;
+    }
+    
+    
+    .para{
+        font-size: 18px;
+        margin-left: 45px;
+        margin-top: 35px;
+    }
+    
+    
+    .unlock{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .bonusCard{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        margin-left: x;
+    }  
+}

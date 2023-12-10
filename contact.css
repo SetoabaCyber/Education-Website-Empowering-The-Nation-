@@ -1,0 +1,195 @@
+.intro{
+  display: flex;
+  flex-direction: row;
+  background-image: url(Images/people-working-call-center.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+.section1{
+   
+  background-color: #dbfdff9e;
+    width: 50%;
+    display: flex;
+   float: left;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section2{
+    
+    background-color: #dbfdff9e;
+    width: 50%;
+    display: flex;
+    float: left;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.section2Image{
+ height: 490px;
+ width: 490px;   
+ border-radius: 65px;
+ margin-bottom: 15px;
+}
+
+.head{
+    font-size: 35px;
+    font-weight: 900;
+    margin-top: 50px;
+    font-family: Arial;
+}
+
+.para{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Arial;
+
+}
+
+
+/*Contact form section of the pages*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #00d0ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #ffffff;
+    color:#000000;
+    transition: 0.5s;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f200;
+    padding: 20px;
+    width: 70%;
+    font-weight: 800;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+
+  @media screen and (max-width: 600px)
+{
+
+  .intro{
+    display: flex;
+    flex-direction: column;
+    background-image: url(Images/people-working-call-center.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+  }
+  
+  .section1{
+     
+    background-color: #dbfdff9e;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment:fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+  }
+  
+  .section2{
+      
+      background-color: #dbfdff9e;
+      width: 100%;
+      display: flex;
+      float: left;
+      justify-content: center;
+      justify-items: center;
+      margin: 0 auto;
+  
+  }
+  
+  .section2Image{
+   height: 490px;
+   width: 490px;   
+   border-radius: 65px;
+   margin-bottom: 15px;
+  }
+  
+  .head{
+      font-size: 35px;
+      font-weight: 900;
+      margin-top: 50px;
+      font-family: Arial;
+  }
+  
+  .para{
+      font-size: 15px;
+      font-weight: 400;
+      font-family: Arial;
+  
+  }
+  
+  
+  /*Contact form section of the pages*/
+  
+  input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #00d0ff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #ffffff;
+      color:#000000;
+      transition: 0.5s;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f200;
+      padding: 20px;
+      width: 70%;
+      font-weight: 800;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+}
+  
